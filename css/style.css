@@ -23,11 +23,7 @@ button {
   border: 0;
   cursor: pointer;
 }
-html,
-body {
-  margin: 0;
-  overflow-x: hidden;
-}
+
 @font-face {
   font-family: "Inter";
   src:
@@ -108,7 +104,26 @@ body {
   display: flex;
   gap: 34px;
 }
-
+.menu__link {
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+}
+.menu__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #ffd748;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.menu__link:hover:after {
+  transform: scaleX(1);
+}
 .hero__inner {
   display: flex;
   align-items: center;
@@ -169,7 +184,7 @@ body {
 }
 .material {
   padding-top: 50px;
-  margin-bottom: 225px;
+  margin-bottom: 263px;
 }
 .material__inner {
   display: flex;
@@ -235,7 +250,6 @@ body {
 .cart__item-price {
   font-size: 18px;
   font-weight: 700;
-  /* margin-bottom: 50px; */
 }
 .cart__item:hover {
   transform: scale(1.04);
@@ -258,4 +272,122 @@ body {
   opacity: 1;
   transform: scale(1.3);
   box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.about-us {
+}
+.title__about {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 1.5;
+}
+.choose-us__box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.choose-us__box-inner {
+  display: flex;
+  position: relative;
+  top: -44px;
+  flex-direction: column;
+  width: 540px;
+}
+.choose-us__text {
+  width: 444px;
+  margin-bottom: 25px;
+}
+.choose-title {
+  margin-bottom: 16px;
+}
+.choose-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6a6a6a;
+  line-height: 1.7;
+  margin-bottom: 5px;
+}
+
+.choose__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 46px;
+}
+.choose__item {
+  min-width: 247px;
+  margin-bottom: 24px;
+}
+.choose-img {
+}
+.choose__list-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.choose__list-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6a6a6a;
+  line-height: 1.7;
+  margin-bottom: 5px;
+}
+.about-img {
+  position: relative;
+}
+.about-us__img {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+.choose-dekor {
+  position: absolute;
+  width: 260px;
+  height: 176px;
+  top: -48px;
+  left: -81px;
+  right: -20px;
+  background-image: url(../images/dotted.webp);
+  z-index: 1;
+}
+.we-help {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-bottom: 210px;
+}
+.help-img {
+}
+.we-help__img-1 {
+}
+.we-help__img-2 {
+}
+.we-help__img-3 {
+}
+.help__text-box {
+}
+.help__title {
+}
+.help-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6a6a6a;
+  line-height: 1.7;
+  margin-bottom: 5px;
+}
+.help-box {
+}
+.help__list {
+}
+.help__list-item {
+}
+.help__list-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6a6a6a;
+  line-height: 1.7;
+  margin-bottom: 5px;
+}
+.main__btn-explore {
 }
