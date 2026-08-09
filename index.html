@@ -7,6 +7,10 @@
     <title>Furniture</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
     <!-- <link
       rel="preload"
       href="/fonts/Inter-Regular.woff2"
@@ -235,7 +239,7 @@
         </div>
       </div>
     </section>
-    <div class="info">
+    <section class="info">
       <div class="container">
         <ul class="info__list">
           <li class="info__item">
@@ -276,13 +280,104 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
     <section class="reviews">
       <div class="container">
-        <div class="reviews__slider"></div>
+        <h2 class="reviews__title">Testimonials</h2>
+        <div class="reviews__slider">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper reviews__slider-box">
+              <div class="swiper-slide reviews__slide">
+                <p class="reviews__text">
+                  ‘’Donec nibh magna, interdum quis massa sed, rhoncus laoreet
+                  quam. Mauris accumsan felis fermentum euismod egestas. Mauris
+                  ante augue, cursus sit amet arcu a, maximus suscipit nibh.
+                  Integer vel nibh tellus. Pellentesque in risus non dui
+                  venenatis sollicitudin sed vitae diam. Fusce tincidunt nisl
+                  mi, at molestie odio accumsan non. Pellentesque ma’’
+                </p>
+                <div class="reviews_slide">
+                  <img src="images/author.png" alt="" class="reviews__author" />
+
+                  <h3 class="slide__title">Zain Bin Noor</h3>
+                  <p class="slide__descr">CEO, Co-Founder, XYZ Inc.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <p class="reviews__text">
+                  ‘’Donec nibh magna, interdum quis massa sed, rhoncus laoreet
+                  quam. Mauris accumsan felis fermentum euismod egestas. Mauris
+                  ante augue, cursus sit amet arcu a, maximus suscipit nibh.
+                  Integer vel nibh tellus. Pellentesque in risus non dui
+                  venenatis sollicitudin sed vitae diam. Fusce tincidunt nisl
+                  mi, at molestie odio accumsan non. Pellentesque ma’’
+                </p>
+                <div class="reviews_slide">
+                  <img src="images/author.png" alt="" class="reviews__author" />
+
+                  <h3 class="slide__title">Zain Bin Noor</h3>
+                  <p class="slide__descr">CEO, Co-Founder, XYZ Inc.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <p class="reviews__text">
+                  ‘’Donec nibh magna, interdum quis massa sed, rhoncus laoreet
+                  quam. Mauris accumsan felis fermentum euismod egestas. Mauris
+                  ante augue, cursus sit amet arcu a, maximus suscipit nibh.
+                  Integer vel nibh tellus. Pellentesque in risus non dui
+                  venenatis sollicitudin sed vitae diam. Fusce tincidunt nisl
+                  mi, at molestie odio accumsan non. Pellentesque ma’’
+                </p>
+                <div class="reviews_slide">
+                  <img src="images/author.png" alt="" class="reviews__author" />
+
+                  <h3 class="slide__title">Zain Bin Noor</h3>
+                  <p class="slide__descr">CEO, Co-Founder, XYZ Inc.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="navigation">
+            <div class="button-prev">
+              <svg
+                width="10"
+                height="18"
+                viewBox="0 0 10 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 16.6449L1 8.82244L9 1"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="button-next">
+              <svg
+                width="10"
+                height="18"
+                viewBox="0 0 10 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 16.6449L9 8.82244L1 1"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

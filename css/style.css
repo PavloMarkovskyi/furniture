@@ -482,3 +482,139 @@ body {
   line-height: 1.57;
   color: #6a6a6a;
 }
+.reviews {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.reviews__slide,
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.reviews__slider-box {
+}
+.reviews__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 44px;
+  text-align: center;
+}
+.reviews__slider {
+  position: relative;
+  margin-bottom: 130px;
+}
+.swiper {
+  margin-bottom: 40px;
+  padding: 0 80px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.swiper-slide {
+  max-width: 759px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reviews__text {
+  max-width: 759;
+  padding: 0 20px;
+  margin-bottom: 80px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+  min-height: 400px;
+}
+
+.reviews_slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.reviews_slide img {
+  margin-bottom: 13px;
+}
+.reviews__author {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.swiper-wrapper {
+  align-content: center;
+}
+.slide__title {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.slide__descr {
+  font-size: 14px;
+  color: #666;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  left: -60px;
+  right: -70px;
+  z-index: 2;
+}
+
+.button-prev,
+.button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button-prev::before,
+.button-next::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  transform: translate(-50%, -50%);
+}
+.button-prev {
+  background-color: #e8e8e8;
+}
+
+.button-next {
+  background-color: #e8e8e8;
+}
+
+/* сама стрілка */
+.button-prev svg,
+.button-next svg {
+  transition: stroke 0.3s ease;
+}
+
+/* Hover: сіра кнопка стає жовтою */
+.button-prev:hover {
+  background-color: #f2c94c;
+}
+
+/* Hover: жовта кнопка трохи темнішає, а не зникає */
+.button-next:hover {
+  background-color: #e0b93e;
+}
+
+/* якщо хочете, щоб і стрілка міняла колір на hover */
+.button-prev:hover svg path,
+.button-next:hover svg path {
+  stroke: #222;
+}
