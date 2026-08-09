@@ -483,7 +483,7 @@ body {
   color: #6a6a6a;
 }
 .reviews {
-  max-width: 800px;
+  max-width: 760px;
   margin: 0 auto;
 }
 .reviews__slide,
@@ -521,7 +521,7 @@ body {
 }
 
 .reviews__text {
-  max-width: 759;
+  max-width: 759px;
   padding: 0 20px;
   margin-bottom: 80px;
   font-size: 18px;
@@ -557,6 +557,10 @@ body {
   font-size: 14px;
   color: #666;
 }
+/* .swiper-pagination {
+  position: absolute !important;
+  left: -14px !important;
+} */
 .navigation {
   display: flex;
   justify-content: space-between;
