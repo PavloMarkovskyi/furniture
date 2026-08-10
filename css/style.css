@@ -483,7 +483,7 @@ body {
   color: #6a6a6a;
 }
 .reviews {
-  max-width: 760px;
+  max-width: 840px;
   margin: 0 auto;
 }
 .reviews__slide,
@@ -492,8 +492,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.reviews__slider-box {
-}
+
 .reviews__title {
   font-family: "Poppins", sans-serif;
   font-size: 34px;
@@ -508,21 +507,21 @@ body {
 }
 .swiper {
   margin-bottom: 40px;
-  padding: 0 80px;
+  padding: 0 10px;
   overflow: hidden;
   position: relative;
   z-index: 1;
 }
 
 .swiper-slide {
-  max-width: 759px;
+  /* max-width: 759px; */
   margin: 0 auto;
   text-align: center;
 }
 
 .reviews__text {
-  max-width: 759px;
-  padding: 0 20px;
+  /* max-width: 759px; */
+  padding: 0 10px;
   margin-bottom: 80px;
   font-size: 18px;
   line-height: 1.7;
@@ -557,17 +556,14 @@ body {
   font-size: 14px;
   color: #666;
 }
-/* .swiper-pagination {
-  position: absolute !important;
-  left: -14px !important;
-} */
+
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
   top: 30px;
-  left: -60px;
+  left: -70px;
   right: -70px;
   z-index: 2;
 }
@@ -575,6 +571,7 @@ body {
 .button-prev,
 .button-next {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   width: 44px;
