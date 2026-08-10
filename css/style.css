@@ -522,11 +522,11 @@ body {
 .reviews__text {
   /* max-width: 759px; */
   padding: 0 10px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   font-size: 18px;
   line-height: 1.7;
   color: #444;
-  min-height: 400px;
+  min-height: 330px;
 }
 
 .reviews_slide {
