@@ -311,17 +311,33 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 46px;
+  position: relative;
 }
 .choose__item {
   min-width: 247px;
   margin-bottom: 24px;
 }
-
+.choose__item img {
+  margin-bottom: 11px;
+}
+.choose__icon {
+  display: inline-block;
+  position: relative;
+}
+.ellipse {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  background: url(../images/ellipse.svg);
+  top: 4px;
+  left: 10px;
+}
 .choose__list-title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.5;
+  margin-bottom: 9px;
 }
 .choose__list-text {
   font-size: 14px;
