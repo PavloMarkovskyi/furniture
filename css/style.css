@@ -143,11 +143,10 @@ body {
   font-weight: 400;
   margin-bottom: 70px;
 }
-.hero-btn {
+.hero-btns {
   display: flex;
   gap: 24px;
 }
-
 .main__btn {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -156,10 +155,59 @@ body {
   background-color: #35736e;
   border: 1px solid #ffffff;
 }
+.hero__btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  padding: 10px 45px;
+  border-radius: 30px;
+  background-color: #35736e;
+  border: 1px solid #ffffff;
+}
+
+.hero__btn:hover {
+  border: 1px solid #ffd748;
+  color: #ffd748;
+}
 .shop-btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  position: relative;
+  transition: all 0.3s;
+  overflow: hidden;
+  z-index: 1;
+}
+.shop-btn::after {
+  content: "";
+  border-radius: 30px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  position: absolute;
   background-color: #ffd748;
   border: 1px solid #ffd748;
-  padding: 10px 30px;
+  z-index: -2;
+}
+.shop-btn::before {
+  content: "";
+  border-radius: 30px;
+  width: 0%;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  transition: all 0.3s;
+  background-color: #35736e;
+  z-index: -1;
+}
+.shop-btn:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.shop-btn:hover:before {
+  width: 100%;
 }
 .explore-btn {
   color: #ffffff;
@@ -213,9 +261,41 @@ body {
   font-size: 20px;
   padding: 10px 45px;
   border-radius: 30px;
-  background-color: #35736e;
-  border: 1px solid #ffffff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   color: #ffffff;
+}
+.main__btn-explore::after {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  background-color: #35736e;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s;
+  z-index: -2;
+}
+.main__btn-explore::before {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  background-color: #ffd748;
+  width: 0%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.main__btn-explore:hover {
+  color: #000000;
+  border: 1px solid #ffd748;
+}
+.main__btn-explore:hover::before {
+  width: 100%;
 }
 .cart__list {
   display: flex;
