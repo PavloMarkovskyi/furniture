@@ -16,7 +16,9 @@ a {
 ul {
   list-style-type: none;
 }
-
+input {
+  border: none;
+}
 button {
   background-color: transparent;
   padding: 0;
@@ -77,7 +79,9 @@ body {
   color: #2f2f2f;
   background: #eff2f1;
 }
-
+main {
+  flex: 1;
+}
 .container {
   max-width: 1320px;
   padding: 0 10px;
@@ -770,4 +774,121 @@ body {
   font-size: 14px;
   font-weight: 300;
   color: #2f2f2f;
+}
+.footer {
+  background: #ffffff;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-top: 88px;
+  margin: 96px;
+}
+.footer__right {
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+}
+.form__title {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2f2f2f;
+  margin-bottom: 24px;
+}
+.footer__form {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+.form__input {
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+  padding: 15px 22px;
+  max-width: 262px;
+  color: #2f2f2f;
+}
+.form__input::placeholder {
+  color: #6a6a6a;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer__menu {
+  display: flex;
+  margin-bottom: 40px;
+  gap: 100px;
+  color: #6a6a6a;
+}
+.footer__descr {
+  max-width: 360px;
+  line-height: 1.5;
+}
+.footer__logo {
+  margin-bottom: 10px;
+}
+.footer__nav {
+  display: flex;
+  gap: 60px;
+  line-height: 1.7;
+  align-items: flex-start;
+}
+.footer__nav-item {
+  margin-bottom: 5px;
+}
+.footer__nav-link {
+  display: inline-block;
+  position: relative;
+}
+.footer__nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffd748;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.footer__nav-link:hover:after {
+  transform: scaleX(1);
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.footer__social {
+  display: flex;
+  gap: 11px;
+}
+.social__link {
+  padding: 12px;
+  width: 41px;
+  height: 41px;
+  background: #d2d2d2;
+  text-align: center;
+  border-radius: 50%;
+}
+.social__img {
+  width: 17px;
+  height: 17px;
+}
+.tech-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 55px;
 }
